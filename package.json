@@ -1,0 +1,38 @@
+{
+  "name": "gesper",
+  "displayName": "Gesper Theme",
+  "description": "Based on the Vesper Theme from raunofreiberg, with a little more color and a little bit styled",
+  "publisher": "ariondevv",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ariondevv/gesper-theme"
+  },
+  "keywords": [
+    "theme",
+    "color-theme",
+    "vscode",
+    "vscode-theme",
+    "vesper",
+    "vesper++",
+    "vesper-pp",
+    "ariondevv",
+    "gesper"
+  ],
+  "icon": "icon.png",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Gesper Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Gesper Theme-color-theme.json"
+      }
+    ]
+  }
+}

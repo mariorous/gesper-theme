@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/climax.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>climax</title>
+  </head>
+  <body class="bg-gradient-to-r from-blue-500 to-blue-200 h-screen w-full">
+    <main>
+      <div class="flex items-center justify-center mt-60">
+        <input type="text" placeholder="Enter a city name..." class="rounded-3xl w-96 h-14 p-4" oninput="toggleClearButton()">
+          <button id="clearButton" class="absolute right-4" onclick="clearInput()">X</button>
+      </div>
+      <div class="mr-10">
+        <img src="/sun.webp" alt="">
+      </div>
+    </main>
+    <script>
+      function toggleClearButton() {
+        var input = document.querySelector('input');
+        var clearButton = document.getElementById('clearButton');
+
+        if (input.value.trim() !== '') {
+          clearButton.style.display = 'block';
+        } else {  
+          clearButton.style.display = 'none';
+        }
+      }
+
+      function clearInput() {
+        var input = document.querySelector('input');
+        input.value = '';
+        toggleClearButton();
+      }
+    </script>
+  </body>
+</html>
